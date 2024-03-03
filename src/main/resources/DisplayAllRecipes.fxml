@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.DisplayAllRecipesController">
+   <children>
+      <Text fill="#24bc2b" layoutX="21.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Our recipes" wrappingWidth="144.61517333984375">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Text>
+      <TableView fx:id="tableView" layoutX="71.0" layoutY="57.0" prefHeight="286.0" prefWidth="458.0">
+        <columns>
+          <TableColumn fx:id="idtitre" prefWidth="75.0" text="Titre" />
+          <TableColumn fx:id="idRate" prefWidth="71.20001220703125" text="Rate" />
+            <TableColumn fx:id="idContent" prefWidth="209.5999755859375" text="Content" />
+            <TableColumn fx:id="idCategory" prefWidth="100.80002441406248" text="Category" />
+        </columns>
+      </TableView>
+      <Button layoutX="179.0" layoutY="356.0" mnemonicParsing="false" onAction="#supprimer" prefHeight="29.0" prefWidth="80.0" text="Delete" />
+      <Button layoutX="356.0" layoutY="356.0" mnemonicParsing="false" onAction="#modifierAction" prefHeight="29.0" prefWidth="80.0" text="Modify" />
+   </children>
+</AnchorPane>
